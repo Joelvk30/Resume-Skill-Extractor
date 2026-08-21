@@ -48,15 +48,15 @@ No external dataset is required for this track. The system processes free-form c
 8. **Job role suggestion (Part 2)** — the candidate's extracted skills, technologies, and languages are merged into a single set (with a lowercase variant for forgiving, case-insensitive matching) and compared against each of the 10 predefined job roles in `JOB_ROLES`. For each role, a **match score** is computed as a weighted sum: the fraction of *required* skills matched contributes up to 60 points, and the fraction of *optional* skills matched contributes up to 40 points. Each role is then labeled by suitability tier — **Strong Fit** (≥75), **Moderate Fit** (≥45), **Potential Fit** (≥20), or **Low Match** (below 20) — and all roles are returned sorted by score, descending, along with the specific matched skills and missing required/optional skills for each.
 9. *Job-description matching (Part 2)* — a candidate's extracted profile can also be matched directly against a specific job description. If the JD hasn't already been processed, its text is passed through the same Part 1 extraction pipeline (`extract_information`) to get its own skill set. The match score is the percentage of the JD's extracted skills that the candidate also has, and the result is labeled *Excellent Match* (≥80%), *Good Match* (≥60%), **Partial Match** (≥35%), or **Low Match** (below 35%), along with the specific matched and missing skills.
 
-## Technologies Used
+# Technologies Used
 - **Python**
 - **NLTK** (tokenization, stopword removal, lemmatization)
 - **`re` (Regular Expressions)** — text cleaning and normalization
 - **`string`** — punctuation handling
 - Pure Python (dictionaries, sets, list comprehensions) for the job-role scoring and JD-matching logic in Part 2 — no external ML/embedding libraries were needed for this rule-based approach
 
-## Results
-[Fill in: e.g., "The extraction pipeline correctly identifies skills/technologies/languages across N test sentences, including abbreviated and multi-word phrasing. The matching feature correctly suggests relevant job roles for M sample profiles." Include a couple of concrete before/after examples if possible.]
+# Results
+"The extraction pipeline correctly identifies skills/technologies/languages across N test sentences, including abbreviated and multi-word phrasing. The matching feature correctly suggests relevant job roles for M sample profiles." 
 
 ## Challenges Faced
 [Fill in — e.g., handling overlapping n-grams so the same phrase isn't double-counted, deciding how to prioritize longer multi-word matches over shorter single-word ones, resolving ambiguous aliases, tuning what counts as a "match" for Part 2, etc.]
@@ -69,7 +69,7 @@ No external dataset is required for this track. The system processes free-form c
 
 
 ## Screenshots
+![Uploading image.png…]()
 
-<img width="798" height="220" alt="image" src="https://github.com/user-attachments/assets/09c07723-f6b0-43fc-9383-73bc79d96132" />
 ---
 
