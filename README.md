@@ -36,7 +36,7 @@ python main.py   # replace with your actual entry-point filename
 > Fill in the exact entry-point filename and confirm the install steps match your actual project structure before submitting.
 
 # Dataset Used
-No external dataset is required for this track. The system processes free-form conversational text provided directly by the user at runtime. Job role definitions used for Part 2 matching (`JOB_ROLES`) are hand-curated in-code — 10 roles (AI/ML Engineer, Data Scientist, Data Engineer, NLP Specialist, Computer Vision Engineer, Frontend Developer, Backend Developer, Full Stack Developer, DevOps/Cloud Engineer, Cybersecurity Analyst), each with a description, required skills, and optional skills. 
+No external dataset is required for this track. The system processes free-form conversational text provided directly by the user at runtime. Job role definitions used for Part 2 matching `JOB_ROLES` are hand-curated in-code — 10 roles (AI/ML Engineer, Data Scientist, Data Engineer, NLP Specialist, Computer Vision Engineer, Frontend Developer, Backend Developer, Full Stack Developer, DevOps/Cloud Engineer, Cybersecurity Analyst), each with a description, required skills, and optional skills. 
 # Methodology
 1. *Text normalization* — input text is lowercased, whitespace is collapsed, and non-essential punctuation is stripped while preserving characters meaningful to technical terms (`+`, `#`, `.`, `-`), so terms like "C++" and "C#" remain intact.
 2. *Tokenization* — normalized text is split into individual word tokens.
