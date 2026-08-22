@@ -69,7 +69,8 @@ Handling overlapping n-grams so the same phrase isn't double-counted, deciding h
 
 
 # Screenshots
-![Uploading image.png…]()
+<img width="1895" height="1003" alt="Screenshot 2026-08-22 021435" src="https://github.com/user-attachments/assets/fdba764c-9796-4f9d-90e5-d42199485e60" />
+
 
 ---
 
